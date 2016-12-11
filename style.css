@@ -1,0 +1,14 @@
+.alert:not(:empty) {
+	padding: 15px;
+	margin: 15px 0; 
+	background: #c33;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #ccc;
+	color: #fff;
+} /*Solves the issue*/
+
+p {
+	margin: 0;
+	padding: 0;
+}
