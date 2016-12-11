@@ -1,39 +1,72 @@
-.alert:not(:empty) {
-	padding: 15px;
-	margin: 15px 0; 
-	background: #c33;
-	border-radius: 5px;
-	width: 100%;
-	border: 1px solid #ccc;
-	color: #fff;
-} /*Solves the issue*/
+* {
+	margin: 0;
+	padding: 0;
+}
 
+.alert:not(:empty) {
+    padding: 15px;
+    margin: 15px 0;
+    background: #c33;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+
+/*Solves the issue*/
 
 article p:first-of-type {
-	font-size: 2rem;
-	font-weight: 400;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 article p:last-of-type {
-	color: #c33;
+    color: #c33;
 }
 
 article img:last-of-type {
-	border: 5px solid slategray;
+    border: 5px solid slategray;
 }
 
 article blockquote:only-of-type {
-	border-left: 5px solid slategray;
-	padding-left: 2rem;
-	font-weight: bold;
-	font-style: italic;
-	color: slategray;
+    border-left: 5px solid slategray;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: slategray;
 }
 
 article p:nth-of-type(odd) {
-	color: maroon;
+    color: maroon;
 }
 
 article p:nth-of-type(3n) {
-	color: yellow;
+    color: yellow;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100%;
+    background: blue;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25rem;
+    height: 100%;
+    background: yellow;
+}
+
+.main {
+    background: #c33;
+    color: #fff;
+    margin-left: 5rem;
+    width: calc(100% - 30rem); /*100% - (aside + nav)*/
+    height: 100%;
 }
